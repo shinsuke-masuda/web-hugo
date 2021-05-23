@@ -1,0 +1,10 @@
+<a href="{{ cond (not .Site.Home.File) .Sites.First.Home.RelPermalink .Site.Home.RelPermalink }}">
+  <h2 class="book-brand">
+    {{- with .Site.Params.BookLogo -}}
+    <img src="{{ . | relURL }}" alt="Logo" />
+    {{- end -}}
+    <span>{{ .Site.Title }}</span></br>
+    <div style="text-align:center;"><span><small>{{ .Site.Params.BookSubTitle }}</small></span></div>
+  </h2>
+  <small><i>The Next Stage なりたい自分にきっとなる</i></small>
+</a>

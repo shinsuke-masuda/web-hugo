@@ -1,0 +1,9 @@
+<ul>
+    <li>情報カテゴリ一覧</li>
+    <ul>
+        {{ $taxonomies := index .Site.Taxonomies "categories"}}
+        {{ range $key, $val := $taxonomies }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{ end }}
+    </ul>
+</ul>

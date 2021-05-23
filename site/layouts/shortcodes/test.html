@@ -1,0 +1,13 @@
+{{ range first 5 (sort (where (where .Site.Pages "Type" "posts") "Kind" "page") "Date" "desc")}}
+<article class="markdown book-post">
+    <h3>
+        <i class="fas fa-user-astronaut"></i>
+        <a href="{{ .RelPermalink }}">{{ partial "docs/title.html" . }}</a>
+    </h3>
+    {{ partial "docs/post-meta" . }}
+    {{ .Type }}
+    {{ .Kind }}
+    <p>
+    </p>
+</article>
+{{ end }}

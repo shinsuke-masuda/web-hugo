@@ -1,3 +1,14 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "jp"
+title = "長野西高等学校"
+disqusShortname = "my-site"
+theme = "book"
+
+[params]
+  BookTheme = 'light'
+  BookToC = false
+  BookLogo = 'graduation-cap.png'
+  # BookMenuBundle= '/menu'
+  BookSubTitle = "通信制 望月サテライト校"
+  BookDateFormat = "2006年 1月 2日"
+  BookComments = false
