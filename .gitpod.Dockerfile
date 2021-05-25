@@ -8,5 +8,5 @@ RUN git config --global user.name "Masuda Shinsuke"
 RUN brew update
 RUN brew install hugo
 RUN brew install gh
-RUN echo "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" > ~/github_token.txt
+RUN echo "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" > ~/github_token.txt
 RUN gh auth login --with-token < ~/github_token.txt
